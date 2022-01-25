@@ -1,0 +1,65 @@
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# nmap netflix.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2022-01-25 23:53 UTC
+Nmap scan report for netflix.com (3.230.129.93)
+Host is up (0.021s latency).
+Other addresses for netflix.com (not scanned): 52.3.144.142 54.237.226.164 2600:1f18:631e:2f80:77e5:13a7:6533:7584 2600:1f18:631e:2f84:ceae:e049:1e:6a96 2600:1f18:631e:2f82:c8cd:27b2:ac:8dbf
+rDNS record for 3.230.129.93: ec2-3-230-129-93.compute-1.amazonaws.com
+Not shown: 998 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 4.60 seconds
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# nmap -p 80 pokemon.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2022-01-25 23:57 UTC
+Nmap scan report for pokemon.com (69.172.200.183)
+Host is up (0.028s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 0.18 seconds
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# nmap -p 0-100 facebook.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2022-01-25 23:58 UTC
+Nmap scan report for facebook.com (31.13.80.36)
+Host is up (0.0012s latency).
+Other addresses for facebook.com (not scanned): 2a03:2880:f10e:83:face:b00c:0:25de
+rDNS record for 31.13.80.36: edge-star-mini-shv-01-yyz1.facebook.com
+Not shown: 100 filtered ports
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 1.88 seconds
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# nmap -F youtube.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2022-01-25 23:59 UTC
+Nmap scan report for youtube.com (142.251.32.78)
+Host is up (0.0020s latency).
+Other addresses for youtube.com (not scanned): 2607:f8b0:400b:80f::200e
+rDNS record for 142.251.32.78: yyz12s07-in-f14.1e100.net
+Not shown: 98 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 2.15 seconds

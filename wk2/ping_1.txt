@@ -1,0 +1,2 @@
+PING hireamaid.ca (172.64.80.1) 56(84) bytes of data.
+64 bytes from 172.64.80.1 (172.64.80.1): icmp_seq=1 ttl=61 time=1.44 ms
