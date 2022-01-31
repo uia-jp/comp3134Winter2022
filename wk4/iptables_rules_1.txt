@@ -1,0 +1,354 @@
+Command: root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# man iptables
+Output: 
+
+Last login: Thu Jan 27 17:39:24 on console
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Yukinas-MacBook-Pro:~ yukina$ man iptables
+No manual entry for iptables
+Yukinas-MacBook-Pro:~ yukina$ ssh root@143.198.39.224
+root@143.198.39.224's password: 
+Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.4.0-81-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Mon Jan 31 15:34:45 UTC 2022
+
+  System load:  0.0                Users logged in:       0
+  Usage of /:   14.0% of 24.06GB   IPv4 address for eth0: 143.198.39.224
+  Memory usage: 62%                IPv4 address for eth0: 10.20.0.5
+  Swap usage:   0%                 IPv4 address for eth1: 10.118.0.2
+  Processes:    128
+
+69 updates can be applied immediately.
+5 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+
+*** System restart required ***
+********************************************************************************
+
+Welcome to DigitalOcean's 1-Click LAMP Droplet.
+To keep this Droplet secure, the UFW firewall is enabled.
+All ports are BLOCKED except 22 (SSH), 80 (HTTP), and 443 (HTTPS).
+
+In a web browser, you can view:
+ * The LAMP 1-Click Quickstart guide: https://do.co/3gY97ha#start
+ * Your LAMP website: http://143.198.39.224
+
+On the server:
+ * The default web root is located at /var/www/html
+ * The MySQL root password is saved in /root/.digitalocean_password
+ * Certbot is preinstalled. Run it to configure HTTPS. See
+   https://do.co/3gY97ha#enable-https for more detail.
+
+For help and more information, visit https://do.co/3gY97ha
+
+********************************************************************************
+To delete this message of the day: rm -rf /etc/update-motd.d/99-one-click
+You have mail.
+Last login: Tue Jan 25 23:25:46 2022 from 142.59.165.46
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# Weekly Content
+Weekly: command not found
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# man iptables
+
+
+   COMMANDS
+       These options specify the desired action to perform. Only one of them can be specified on the
+       command  line  unless  otherwise  stated  below.  For long versions of the command and option
+       names, you need to use only enough letters to ensure that iptables can differentiate it  from
+       all other options.
+
+       -A, --append chain rule-specification
+              Append  one  or  more  rules to the end of the selected chain.  When the source and/or
+              destination names resolve to more than one address, a rule will be added for each pos‐
+              sible address combination.
+
+       -C, --check chain rule-specification
+              Check whether a rule matching the specification does exist in the selected chain. This
+              command uses the same logic as -D to find a matching entry, but does not alter the ex‐
+              isting iptables configuration and uses its exit code to indicate success or failure.
+
+       -D, --delete chain rule-specification
+       -D, --delete chain rulenum
+              Delete one or more rules from the selected chain.  There are two versions of this com‐
+              mand: the rule can be specified as a number in the chain (starting at 1 for the  first
+              rule) or a rule to match.
+
+       -I, --insert chain [rulenum] rule-specification
+              Insert  one  or more rules in the selected chain as the given rule number.  So, if the
+              rule number is 1, the rule or rules are inserted at the head of the  chain.   This  is
+              also the default if no rule number is specified.
+
+       -R, --replace chain rulenum rule-specification
+              Replace  a rule in the selected chain.  If the source and/or destination names resolve
+              to multiple addresses, the command will fail.  Rules are numbered starting at 1.
+
+       -L, --list [chain]
+              List all rules in the selected chain.  If no chain is selected, all chains are listed.
+              Like  every  other  iptables command, it applies to the specified table (filter is the
+              default), so NAT rules get listed by
+               iptables -t nat -n -L
+              Please note that it is often used with the -n option, in order to avoid  long  reverse
+              DNS  lookups.   It is legal to specify the -Z (zero) option as well, in which case the
+              chain(s) will be atomically listed and zeroed.  The exact output is  affected  by  the
+              other arguments given. The exact rules are suppressed until you use
+               iptables -L -v
+              or iptables-save(8).
+
+       -S, --list-rules [chain]
+              Print  all  rules  in  the  selected  chain.   If no chain is selected, all chains are
+ Manual page iptables(8) line 107/378 40% (press h for help or q to quit)
+
+
+Command: iptables -L -v
+Output:
+
+Last login: Thu Jan 27 17:39:24 on console
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Yukinas-MacBook-Pro:~ yukina$ man iptables
+No manual entry for iptables
+Yukinas-MacBook-Pro:~ yukina$ ssh root@143.198.39.224
+root@143.198.39.224's password: 
+Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.4.0-81-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Mon Jan 31 15:34:45 UTC 2022
+
+  System load:  0.0                Users logged in:       0
+  Usage of /:   14.0% of 24.06GB   IPv4 address for eth0: 143.198.39.224
+  Memory usage: 62%                IPv4 address for eth0: 10.20.0.5
+  Swap usage:   0%                 IPv4 address for eth1: 10.118.0.2
+  Processes:    128
+
+69 updates can be applied immediately.
+5 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+
+*** System restart required ***
+********************************************************************************
+
+Welcome to DigitalOcean's 1-Click LAMP Droplet.
+To keep this Droplet secure, the UFW firewall is enabled.
+All ports are BLOCKED except 22 (SSH), 80 (HTTP), and 443 (HTTPS).
+
+In a web browser, you can view:
+ * The LAMP 1-Click Quickstart guide: https://do.co/3gY97ha#start
+ * Your LAMP website: http://143.198.39.224
+
+On the server:
+ * The default web root is located at /var/www/html
+ * The MySQL root password is saved in /root/.digitalocean_password
+ * Certbot is preinstalled. Run it to configure HTTPS. See
+   https://do.co/3gY97ha#enable-https for more detail.
+
+For help and more information, visit https://do.co/3gY97ha
+
+********************************************************************************
+To delete this message of the day: rm -rf /etc/update-motd.d/99-one-click
+You have mail.
+Last login: Tue Jan 25 23:25:46 2022 from 142.59.165.46
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# Weekly Content
+Weekly: command not found
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# man iptables
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# iptables -L -v
+Chain INPUT (policy DROP 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 814K   96M f2b-sshd   tcp  --  any    any     anywhere             anywhere             multiport dports ssh
+ 878K  603M ufw-before-logging-input  all  --  any    any     anywhere             anywhere            
+ 878K  603M ufw-before-input  all  --  any    any     anywhere             anywhere            
+ 148K 6858K ufw-after-input  all  --  any    any     anywhere             anywhere            
+ 130K 5957K ufw-after-logging-input  all  --  any    any     anywhere             anywhere            
+ 130K 5957K ufw-reject-input  all  --  any    any     anywhere             anywhere            
+ 130K 5957K ufw-track-input  all  --  any    any     anywhere             anywhere            
+
+Chain FORWARD (policy DROP 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ufw-before-logging-forward  all  --  any    any     anywhere             anywhere            
+    0     0 ufw-before-forward  all  --  any    any     anywhere             anywhere            
+    0     0 ufw-after-forward  all  --  any    any     anywhere             anywhere            
+    0     0 ufw-after-logging-forward  all  --  any    any     anywhere             anywhere            
+    0     0 ufw-reject-forward  all  --  any    any     anywhere             anywhere            
+    0     0 ufw-track-forward  all  --  any    any     anywhere             anywhere            
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+1052K  150M ufw-before-logging-output  all  --  any    any     anywhere             anywhere            
+1052K  150M ufw-before-output  all  --  any    any     anywhere             anywhere            
+22288 2021K ufw-after-output  all  --  any    any     anywhere             anywhere            
+22288 2021K ufw-after-logging-output  all  --  any    any     anywhere             anywhere            
+22288 2021K ufw-reject-output  all  --  any    any     anywhere             anywhere            
+22288 2021K ufw-track-output  all  --  any    any     anywhere             anywhere            
+
+Chain f2b-sshd (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+    9  1156 REJECT     all  --  any    any     221.131.165.50       anywhere             reject-with icmp-port-unreachable
+   19  1664 REJECT     all  --  any    any     222.187.254.41       anywhere             reject-with icmp-port-unreachable
+   24  1844 REJECT     all  --  any    any     1.117.94.243         anywhere             reject-with icmp-port-unreachable
+   25  1860 REJECT     all  --  any    any     14.142.166.44.static-chennai.vsnl.net.in  anywhere             reject-with icmp-port-unreachable
+   25  1576 REJECT     all  --  any    any     111.207.25.229       anywhere             reject-with icmp-port-unreachable
+   26  1924 REJECT     all  --  any    any     host-static-188-237-6-243.moldtelecom.md  anywhere             reject-with icmp-port-unreachable
+   20  1353 REJECT     all  --  any    any     113.90.208.252       anywhere             reject-with icmp-port-unreachable
+   18  1624 REJECT     all  --  any    any     221.181.185.151      anywhere             reject-with icmp-port-unreachable
+   29  2100 REJECT     all  --  any    any     202.129.1.2          anywhere             reject-with icmp-port-unreachable
+   19  1664 REJECT     all  --  any    any     112.85.42.227        anywhere             reject-with icmp-port-unreachable
+ 621K   81M RETURN     all  --  any    any     anywhere             anywhere            
+
+Chain ufw-after-forward (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-after-input (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+  110 11519 ufw-skip-to-policy-input  udp  --  any    any     anywhere             anywhere             udp dpt:netbios-ns
+    1    28 ufw-skip-to-policy-input  udp  --  any    any     anywhere             anywhere             udp dpt:netbios-dgm
+  113  4940 ufw-skip-to-policy-input  tcp  --  any    any     anywhere             anywhere             tcp dpt:netbios-ssn
+17160  884K ufw-skip-to-policy-input  tcp  --  any    any     anywhere             anywhere             tcp dpt:microsoft-ds
+    1    28 ufw-skip-to-policy-input  udp  --  any    any     anywhere             anywhere             udp dpt:bootps
+    1    28 ufw-skip-to-policy-input  udp  --  any    any     anywhere             anywhere             udp dpt:bootpc
+    0     0 ufw-skip-to-policy-input  all  --  any    any     anywhere             anywhere             ADDRTYPE match dst-type BROADCAST
+
+Chain ufw-after-logging-forward (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 LOG        all  --  any    any     anywhere             anywhere             limit: avg 3/min burst 10 LOG level warning prefix "[UFW BLOCK] "
+
+Chain ufw-after-logging-input (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+ 106K 4881K LOG        all  --  any    any     anywhere             anywhere             limit: avg 3/min burst 10 LOG level warning prefix "[UFW BLOCK] "
+
+Chain ufw-after-logging-output (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-after-output (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-before-forward (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     all  --  any    any     anywhere             anywhere             ctstate RELATED,ESTABLISHED
+    0     0 ACCEPT     icmp --  any    any     anywhere             anywhere             icmp destination-unreachable
+    0     0 ACCEPT     icmp --  any    any     anywhere             anywhere             icmp time-exceeded
+    0     0 ACCEPT     icmp --  any    any     anywhere             anywhere             icmp parameter-problem
+    0     0 ACCEPT     icmp --  any    any     anywhere             anywhere             icmp echo-request
+    0     0 ufw-user-forward  all  --  any    any     anywhere             anywhere            
+
+Chain ufw-before-input (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+ 3572  351K ACCEPT     all  --  lo     any     anywhere             anywhere            
+ 638K  588M ACCEPT     all  --  any    any     anywhere             anywhere             ctstate RELATED,ESTABLISHED
+ 9154 2536K ufw-logging-deny  all  --  any    any     anywhere             anywhere             ctstate INVALID
+ 9154 2536K DROP       all  --  any    any     anywhere             anywhere             ctstate INVALID
+    0     0 ACCEPT     icmp --  any    any     anywhere             anywhere             icmp destination-unreachable
+    0     0 ACCEPT     icmp --  any    any     anywhere             anywhere             icmp time-exceeded
+    0     0 ACCEPT     icmp --  any    any     anywhere             anywhere             icmp parameter-problem
+10702  729K ACCEPT     icmp --  any    any     anywhere             anywhere             icmp echo-request
+    0     0 ACCEPT     udp  --  any    any     anywhere             anywhere             udp spt:bootps dpt:bootpc
+ 217K   11M ufw-not-local  all  --  any    any     anywhere             anywhere            
+    0     0 ACCEPT     udp  --  any    any     anywhere             224.0.0.251          udp dpt:mdns
+    0     0 ACCEPT     udp  --  any    any     anywhere             239.255.255.250      udp dpt:1900
+ 217K   11M ufw-user-input  all  --  any    any     anywhere             anywhere            
+
+Chain ufw-before-logging-forward (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-before-logging-input (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-before-logging-output (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-before-output (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+ 3572  351K ACCEPT     all  --  any    lo      anywhere             anywhere            
+1027K  147M ACCEPT     all  --  any    any     anywhere             anywhere             ctstate RELATED,ESTABLISHED
+22288 2021K ufw-user-output  all  --  any    any     anywhere             anywhere            
+
+Chain ufw-logging-allow (0 references)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 LOG        all  --  any    any     anywhere             anywhere             limit: avg 3/min burst 10 LOG level warning prefix "[UFW ALLOW] "
+
+Chain ufw-logging-deny (2 references)
+ pkts bytes target     prot opt in     out     source               destination         
+ 8547 2383K RETURN     all  --  any    any     anywhere             anywhere             ctstate INVALID limit: avg 3/min burst 10
+  426  113K LOG        all  --  any    any     anywhere             anywhere             limit: avg 3/min burst 10 LOG level warning prefix "[UFW BLOCK] "
+
+Chain ufw-not-local (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+ 217K   11M RETURN     all  --  any    any     anywhere             anywhere             ADDRTYPE match dst-type LOCAL
+    0     0 RETURN     all  --  any    any     anywhere             anywhere             ADDRTYPE match dst-type MULTICAST
+    0     0 RETURN     all  --  any    any     anywhere             anywhere             ADDRTYPE match dst-type BROADCAST
+    0     0 ufw-logging-deny  all  --  any    any     anywhere             anywhere             limit: avg 3/min burst 10
+    0     0 DROP       all  --  any    any     anywhere             anywhere            
+
+Chain ufw-reject-forward (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-reject-input (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-reject-output (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-skip-to-policy-forward (0 references)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 DROP       all  --  any    any     anywhere             anywhere            
+
+Chain ufw-skip-to-policy-input (7 references)
+ pkts bytes target     prot opt in     out     source               destination         
+17386  901K DROP       all  --  any    any     anywhere             anywhere            
+
+Chain ufw-skip-to-policy-output (0 references)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     all  --  any    any     anywhere             anywhere            
+
+Chain ufw-track-forward (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-track-input (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-track-output (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+ 9202 1126K ACCEPT     tcp  --  any    any     anywhere             anywhere             ctstate NEW
+ 4784  391K ACCEPT     udp  --  any    any     anywhere             anywhere             ctstate NEW
+
+Chain ufw-user-forward (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-user-input (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+64184 3823K            tcp  --  any    any     anywhere             anywhere             tcp dpt:ssh ctstate NEW recent: SET name: DEFAULT side: source mask: 255.255.255.255
+ 8405  504K ufw-user-limit  tcp  --  any    any     anywhere             anywhere             tcp dpt:ssh ctstate NEW recent: UPDATE seconds: 30 hit_count: 6 name: DEFAULT side: source mask: 255.255.255.255
+55779 3319K ufw-user-limit-accept  tcp  --  any    any     anywhere             anywhere             tcp dpt:ssh
+ 4394  217K ACCEPT     tcp  --  any    any     anywhere             anywhere             multiport dports http,https /* 'dapp_Apache%20Full' */
+
+Chain ufw-user-limit (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+  498 29852 LOG        all  --  any    any     anywhere             anywhere             limit: avg 3/min burst 5 LOG level warning prefix "[UFW LIMIT BLOCK] "
+ 8405  504K REJECT     all  --  any    any     anywhere             anywhere             reject-with icmp-port-unreachable
+
+Chain ufw-user-limit-accept (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+55779 3319K ACCEPT     all  --  any    any     anywhere             anywhere            
+
+Chain ufw-user-logging-forward (0 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-user-logging-input (0 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-user-logging-output (0 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-user-output (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# 

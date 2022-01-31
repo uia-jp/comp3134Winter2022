@@ -1,0 +1,37 @@
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# tcpdump -i eth0
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+17:05:30.970352 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 1636676979:1636677087, ack 508107732, win 546, options [nop,nop,TS val 3012704135 ecr 634589319], length 108
+17:05:30.970563 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 108:144, ack 1, win 546, options [nop,nop,TS val 3012704135 ecr 634589319], length 36
+17:05:30.970666 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 144:252, ack 1, win 546, options [nop,nop,TS val 3012704135 ecr 634589319], length 108
+17:05:30.970851 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 252:288, ack 1, win 546, options [nop,nop,TS val 3012704135 ecr 634589319], length 36
+17:05:30.974443 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.49055 > 67.207.67.2.domain: 11781+ [1au] PTR? 46.165.59.142.in-addr.arpa. (55)
+17:05:30.974669 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.48484 > 67.207.67.2.domain: 49835+ [1au] PTR? 46.165.59.142.in-addr.arpa. (55)
+17:05:30.974784 IP 142-59-165-46.beanfield.net.58117 > lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 108, win 2046, options [nop,nop,TS val 634589366 ecr 3012704135], length 0
+17:05:30.974785 IP 142-59-165-46.beanfield.net.58117 > lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 144, win 2047, options [nop,nop,TS val 634589366 ecr 3012704135], length 0
+17:05:30.974785 IP 142-59-165-46.beanfield.net.58117 > lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 252, win 2046, options [nop,nop,TS val 634589366 ecr 3012704135], length 0
+17:05:30.974785 IP 142-59-165-46.beanfield.net.58117 > lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 288, win 2047, options [nop,nop,TS val 634589366 ecr 3012704135], length 0
+17:05:30.975058 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.38638 > 67.207.67.2.domain: 64342+ [1au] PTR? 46.165.59.142.in-addr.arpa. (55)
+17:05:30.978066 IP 67.207.67.2.domain > lamp-ubuntu-s-1vcpu-1gb-tor1-01.48484: 49835 1/0/1 PTR 142-59-165-46.beanfield.net. (96)
+17:05:30.978940 IP 67.207.67.2.domain > lamp-ubuntu-s-1vcpu-1gb-tor1-01.38638: 64342 1/0/1 PTR 142-59-165-46.beanfield.net. (96)
+17:05:30.979178 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01 > 67.207.67.2: ICMP lamp-ubuntu-s-1vcpu-1gb-tor1-01 udp port 38638 unreachable, length 132
+17:05:30.979214 IP 67.207.67.2.domain > lamp-ubuntu-s-1vcpu-1gb-tor1-01.49055: 11781 1/0/1 PTR 142-59-165-46.beanfield.net. (96)
+17:05:30.979239 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01 > 67.207.67.2: ICMP lamp-ubuntu-s-1vcpu-1gb-tor1-01 udp port 49055 unreachable, length 132
+17:05:30.979819 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.60730 > 67.207.67.2.domain: 30748+ [1au] PTR? 224.39.198.143.in-addr.arpa. (56)
+17:05:30.980051 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.53186 > 67.207.67.2.domain: 30877+ [1au] PTR? 224.39.198.143.in-addr.arpa. (56)
+17:05:30.980308 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.57350 > 67.207.67.2.domain: 32149+ [1au] PTR? 224.39.198.143.in-addr.arpa. (56)
+17:05:31.061961 IP 67.207.67.2.domain > lamp-ubuntu-s-1vcpu-1gb-tor1-01.53186: 30877 NXDomain 0/1/1 (123)
+17:05:31.062234 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.53186 > 67.207.67.2.domain: 30877+ PTR? 224.39.198.143.in-addr.arpa. (45)
+17:05:31.095421 IP 67.207.67.2.domain > lamp-ubuntu-s-1vcpu-1gb-tor1-01.57350: 32149 NXDomain 0/1/1 (123)
+17:05:31.095791 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.57350 > 67.207.67.2.domain: 32149+ PTR? 224.39.198.143.in-addr.arpa. (45)
+17:05:31.096404 IP 67.207.67.2.domain > lamp-ubuntu-s-1vcpu-1gb-tor1-01.57350: 32149 NXDomain 0/1/0 (112)
+17:05:31.139047 IP 67.207.67.2.domain > lamp-ubuntu-s-1vcpu-1gb-tor1-01.60730: 30748 NXDomain 0/1/1 (123)
+17:05:31.139483 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.60730 > 67.207.67.2.domain: 30748+ PTR? 224.39.198.143.in-addr.arpa. (45)
+17:05:31.139820 IP 67.207.67.2.domain > lamp-ubuntu-s-1vcpu-1gb-tor1-01.60730: 30748 NXDomain 0/1/0 (112)
+17:05:31.223322 IP 67.207.67.2.domain > lamp-ubuntu-s-1vcpu-1gb-tor1-01.53186: 30877 NXDomain 0/1/0 (112)
+17:05:31.224965 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 288:1132, ack 1, win 546, options [nop,nop,TS val 3012704389 ecr 634589366], length 844
+17:05:31.225394 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.50425 > 67.207.67.2.domain: 24806+ [1au] PTR? 2.67.207.67.in-addr.arpa. (53)
+17:05:31.225558 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.59769 > 67.207.67.2.domain: 26382+ [1au] PTR? 2.67.207.67.in-addr.arpa. (53)
+17:05:31.225707 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.51995 > 67.207.67.2.domain: 53258+ [1au] PTR? 2.67.207.67.in-addr.arpa. (53)
+17:05:31.226043 IP 67.207.67.2.domain > lamp-ubuntu-s-1vcpu-1gb-tor1-01.50425: 24806 NXDomain 0/1/1 (120)
+17:05:31.226239 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.50425 > 67.207.67.2.domain: 24806+ PTR? 2.67.207.67.in-addr.arpa. (42)

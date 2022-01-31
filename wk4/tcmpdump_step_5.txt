@@ -1,0 +1,35 @@
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# tcpdump -XX -i eth0
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+17:15:10.391695 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 1856488695:1856488803, ack 508253556, win 546, options [nop,nop,TS val 3013283556 ecr 635168764], length 108
+	0x0000:  fe00 0000 0101 6ea0 b291 7ffa 0800 4510  ......n.......E.
+	0x0010:  00a0 cbf0 4000 4006 8347 8fc6 27e0 8e3b  ....@.@..G..'..;
+	0x0020:  a52e 0016 e305 6ea7 c4f7 1e4b 5574 8018  ......n....KUt..
+	0x0030:  0222 eba2 0000 0101 080a b39b 0ee4 25db  ."............%.
+	0x0040:  e7fc d4c6 77d1 8b6a 64cb b901 81d3 4b57  ....w..jd.....KW
+	0x0050:  b742 d6bf 9c3b ff40 4b27 dfcc 4f52 b8bd  .B...;.@K'..OR..
+	0x0060:  d80d a3fd c4e0 9e20 6377 21b7 b5e5 7785  ........cw!...w.
+	0x0070:  a015 b776 5c7d a24d e2d3 8718 730f 19c5  ...v\}.M....s...
+	0x0080:  fef7 6a80 6019 1a78 e258 5cf3 6686 cf5d  ..j.`..x.X\.f..]
+	0x0090:  7c49 8455 cbd5 be7c 847d 3bc4 503b f4d9  |I.U...|.};.P;..
+	0x00a0:  994c 5a05 718c 2cec 18c4 133c 9155       .LZ.q.,....<.U
+17:15:10.391843 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 108:144, ack 1, win 546, options [nop,nop,TS val 3013283556 ecr 635168764], length 36
+	0x0000:  fe00 0000 0101 6ea0 b291 7ffa 0800 4510  ......n.......E.
+	0x0010:  0058 cbf1 4000 4006 838e 8fc6 27e0 8e3b  .X..@.@.....'..;
+	0x0020:  a52e 0016 e305 6ea7 c563 1e4b 5574 8018  ......n..c.KUt..
+	0x0030:  0222 eb5a 0000 0101 080a b39b 0ee4 25db  .".Z..........%.
+	0x0040:  e7fc bd73 3602 b385 6681 9a27 5d08 3de6  ...s6...f..'].=.
+	0x0050:  5757 454b e4a3 c197 612c 2bdb ecf4 4815  WWEK....a,+...H.
+	0x0060:  3c68 c739 3dbd                           <h.9=.
+17:15:10.391960 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 144:252, ack 1, win 546, options [nop,nop,TS val 3013283556 ecr 635168764], length 108
+	0x0000:  fe00 0000 0101 6ea0 b291 7ffa 0800 4510  ......n.......E.
+	0x0010:  00a0 cbf2 4000 4006 8345 8fc6 27e0 8e3b  ....@.@..E..'..;
+	0x0020:  a52e 0016 e305 6ea7 c587 1e4b 5574 8018  ......n....KUt..
+	0x0030:  0222 eba2 0000 0101 080a b39b 0ee4 25db  ."............%.
+	0x0040:  e7fc 4dd5 4f41 72e8 4039 23fa f8ee 603b  ..M.OAr.@9#...`;
+	0x0050:  96fb da6b 7197 375c 5463 fcf1 6f22 b2c6  ...kq.7\Tc..o"..
+	0x0060:  fbcd 62d5 bbc6 8eda a8fa 931f 74b6 fa70  ..b.........t..p
+	0x0070:  4c1e 028e 420e bd06 86b1 dd7d a1b7 d6c1  L...B......}....
+	0x0080:  445b 910d 99cf aba4 ba05 cd33 0f16 7d06  D[.........3..}.
+	0x0090:  c086 3ce8 905c e520 cbf1 f00c 91c6 1190  ..<..\..........
+	0x00a0:  7f65 8c42 5402 fec9 4ce3 d617 c914       .e.BT...L.....

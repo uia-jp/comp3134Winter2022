@@ -1,0 +1,12 @@
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# tcpdump -c 5 -i eth0
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+17:09:29.784496 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 1831880119:1831880227, ack 508234944, win 546, options [nop,nop,TS val 3012942949 ecr 634828165], length 108
+17:09:29.784626 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 108:144, ack 1, win 546, options [nop,nop,TS val 3012942949 ecr 634828165], length 36
+17:09:29.784750 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 144:252, ack 1, win 546, options [nop,nop,TS val 3012942949 ecr 634828165], length 108
+17:09:29.784958 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 252:288, ack 1, win 546, options [nop,nop,TS val 3012942949 ecr 634828165], length 36
+17:09:29.786396 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.39576 > 67.207.67.2.domain: 1112+ [1au] PTR? 46.165.59.142.in-addr.arpa. (55)
+5 packets captured
+53 packets received by filter
+17 packets dropped by kernel
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# 

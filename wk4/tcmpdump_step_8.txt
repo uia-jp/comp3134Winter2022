@@ -1,0 +1,13 @@
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# tcpdump -n -i eth0
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+17:17:46.594509 IP 143.198.39.224.22 > 142.59.165.46.58117: Flags [P.], seq 1859519991:1859520099, ack 508257592, win 546, options [nop,nop,TS val 3013439759 ecr 635324965], length 108
+17:17:46.594688 IP 143.198.39.224.22 > 142.59.165.46.58117: Flags [P.], seq 108:144, ack 1, win 546, options [nop,nop,TS val 3013439759 ecr 635324965], length 36
+17:17:46.594904 IP 143.198.39.224.22 > 142.59.165.46.58117: Flags [P.], seq 144:252, ack 1, win 546, options [nop,nop,TS val 3013439759 ecr 635324965], length 108
+17:17:46.595281 IP 143.198.39.224.22 > 142.59.165.46.58117: Flags [P.], seq 252:288, ack 1, win 546, options [nop,nop,TS val 3013439760 ecr 635324965], length 36
+17:17:46.595399 IP 143.198.39.224.22 > 142.59.165.46.58117: Flags [P.], seq 288:508, ack 1, win 546, options [nop,nop,TS val 3013439760 ecr 635324965], length 220
+17:17:46.595524 IP 143.198.39.224.22 > 142.59.165.46.58117: Flags [P.], seq 508:544, ack 1, win 546, options [nop,nop,TS val 3013439760 ecr 635324965], length 36
+17:17:46.595693 IP 143.198.39.224.22 > 142.59.165.46.58117: Flags [P.], seq 544:740, ack 1, win 546, options [nop,nop,TS val 3013439760 ecr 635324965], length 196
+17:17:46.595868 IP 143.198.39.224.22 > 142.59.165.46.58117: Flags [P.], seq 740:776, ack 1, win 546, options [nop,nop,TS val 3013439760 ecr 635324965], length 36
+17:17:46.596041 IP 143.198.39.224.22 > 142.59.165.46.58117: Flags [P.], seq 776:972, ack 1, win 546, options [nop,nop,TS val 3013439760 ecr 635324965], length 196
+17:17:46.596173 IP 143.198.39.224.22 > 142.59.165.46.58117: Flags [P.], seq 972:1008, ack 1, win 546, options [nop,nop,TS val 3013439760 ecr 635324965], length 36

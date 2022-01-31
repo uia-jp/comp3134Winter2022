@@ -1,0 +1,19 @@
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# tcpdump -i eth0 tcp
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+17:18:16.520165 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 1859610275:1859610383, ack 508258048, win 546, options [nop,nop,TS val 3013469684 ecr 635354893], length 108
+17:18:16.520270 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 108:144, ack 1, win 546, options [nop,nop,TS val 3013469685 ecr 635354893], length 36
+17:18:16.520358 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 144:252, ack 1, win 546, options [nop,nop,TS val 3013469685 ecr 635354893], length 108
+17:18:16.520441 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 252:288, ack 1, win 546, options [nop,nop,TS val 3013469685 ecr 635354893], length 36
+17:18:16.524457 IP 142-59-165-46.beanfield.net.58117 > lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 108, win 7363, options [nop,nop,TS val 635354904 ecr 3013469684], length 0
+17:18:16.524458 IP 142-59-165-46.beanfield.net.58117 > lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 144, win 7364, options [nop,nop,TS val 635354904 ecr 3013469685], length 0
+17:18:16.524458 IP 142-59-165-46.beanfield.net.58117 > lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 288, win 7362, options [nop,nop,TS val 635354904 ecr 3013469685], length 0
+17:18:16.526313 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 288:540, ack 1, win 546, options [nop,nop,TS val 3013469691 ecr 635354904], length 252
+17:18:16.526493 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 540:576, ack 1, win 546, options [nop,nop,TS val 3013469691 ecr 635354904], length 36
+17:18:16.526790 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 576:804, ack 1, win 546, options [nop,nop,TS val 3013469691 ecr 635354904], length 228
+17:18:16.526949 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 804:840, ack 1, win 546, options [nop,nop,TS val 3013469691 ecr 635354904], length 36
+17:18:16.527176 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 840:1068, ack 1, win 546, options [nop,nop,TS val 3013469691 ecr 635354904], length 228
+17:18:16.527320 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 1068:1104, ack 1, win 546, options [nop,nop,TS val 3013469692 ecr 635354904], length 36
+17:18:16.527498 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 1104:1332, ack 1, win 546, options [nop,nop,TS val 3013469692 ecr 635354904], length 228
+17:18:16.527743 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 1332:1368, ack 1, win 546, options [nop,nop,TS val 3013469692 ecr 635354904], length 36
+17:18:16.527939 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 1368:1588, ack 1, win 546, options [nop,nop,TS val 3013469692 ecr 635354904], length 220

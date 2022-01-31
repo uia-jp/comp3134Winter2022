@@ -1,0 +1,15 @@
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# tcpdump -r 0001.pcap
+reading from file 0001.pcap, link-type EN10MB (Ethernet)
+17:16:33.287457 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 1856528691:1856528735, ack 508254584, win 546, options [nop,nop,TS val 3013366452 ecr 635251666], length 44
+17:16:33.287568 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 44:152, ack 1, win 546, options [nop,nop,TS val 3013366452 ecr 635251666], length 108
+17:16:33.287641 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 152:188, ack 1, win 546, options [nop,nop,TS val 3013366452 ecr 635251666], length 36
+17:16:33.289804 IP 142-59-165-46.beanfield.net.58117 > lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 44, win 7364, options [nop,nop,TS val 635251673 ecr 3013366452], length 0
+17:16:33.289858 IP 142-59-165-46.beanfield.net.58117 > lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 152, win 7363, options [nop,nop,TS val 635251673 ecr 3013366452], length 0
+17:16:33.290218 IP 142-59-165-46.beanfield.net.58117 > lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 188, win 7364, options [nop,nop,TS val 635251673 ecr 3013366452], length 0
+17:16:33.354769 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142.93.211.192.47678: Flags [P.], seq 1061720061:1061720129, ack 545126336, win 507, options [nop,nop,TS val 389194942 ecr 4181818601], length 68
+17:16:33.643377 IP 142.93.211.192.47678 > lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [P.], seq 1:53, ack 68, win 501, options [nop,nop,TS val 4181822734 ecr 389194942], length 52
+17:16:33.643377 IP 142.93.211.192.47678 > lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [F.], seq 53, ack 68, win 501, options [nop,nop,TS val 4181822734 ecr 389194942], length 0
+17:16:33.643444 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142.93.211.192.47678: Flags [.], ack 53, win 507, options [nop,nop,TS val 389195231 ecr 4181822734], length 0
+17:16:33.648884 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142.93.211.192.47678: Flags [F.], seq 68, ack 54, win 507, options [nop,nop,TS val 389195236 ecr 4181822734], length 0
+17:16:33.937852 IP 142.93.211.192.47678 > lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 69, win 501, options [nop,nop,TS val 4181823028 ecr 389195236], length 0
+17:16:34.215852 IP 5.188.159.169.56784 > lamp-ubuntu-s-1vcpu-1gb-tor1-01.10619: Flags [S], seq 2452613814, win 1024, length 0

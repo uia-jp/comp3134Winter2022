@@ -1,0 +1,13 @@
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# tcpdump -i eth0 port 22
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+17:18:55.430855 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 1859794791:1859794899, ack 508258540, win 546, options [nop,nop,TS val 3013508595 ecr 635393804], length 108
+17:18:55.431458 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 108:144, ack 1, win 546, options [nop,nop,TS val 3013508596 ecr 635393804], length 36
+17:18:55.431631 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 144:252, ack 1, win 546, options [nop,nop,TS val 3013508596 ecr 635393804], length 108
+17:18:55.431762 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 252:288, ack 1, win 546, options [nop,nop,TS val 3013508596 ecr 635393804], length 36
+17:18:55.435392 IP 142-59-165-46.beanfield.net.58117 > lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 108, win 7363, options [nop,nop,TS val 635393814 ecr 3013508595], length 0
+17:18:55.435392 IP 142-59-165-46.beanfield.net.58117 > lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 144, win 7364, options [nop,nop,TS val 635393814 ecr 3013508596], length 0
+17:18:55.435392 IP 142-59-165-46.beanfield.net.58117 > lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 252, win 7363, options [nop,nop,TS val 635393814 ecr 3013508596], length 0
+17:18:55.435392 IP 142-59-165-46.beanfield.net.58117 > lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 288, win 7364, options [nop,nop,TS val 635393816 ecr 3013508596], length 0
+17:18:55.437656 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 288:540, ack 1, win 546, options [nop,nop,TS val 3013508602 ecr 635393816], length 252
+17:18:55.437805 IP lamp-ubuntu-s-1vcpu-1gb-tor1-01.ssh > 142-59-165-46.beanfield.net.58117: Flags [P.], seq 540:576, ack 1, win 546, options [nop,nop,TS val 3013508602 ecr 635393816], length 36
