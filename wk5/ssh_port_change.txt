@@ -1,0 +1,2 @@
+6) service sshd start
+7) -p 2222 option
